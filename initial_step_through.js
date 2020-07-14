@@ -1,3 +1,4 @@
+// Lets start simple 101
 // create db and insert a record
 db.foo.insert({x:123})
 
