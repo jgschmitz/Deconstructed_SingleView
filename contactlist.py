@@ -26,6 +26,3 @@ def main():
     number_of_students = 10  # For the above task make this 100 
     input_data(number_of_students) 
 main() 
-# The folder or location where this python code 
-# is save there a students.json will be created  
-# having 10 students data. 
