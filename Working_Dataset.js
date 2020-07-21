@@ -124,37 +124,41 @@ use test
 
 //Query for All Documents in a Collection
 
-To return all documents in a collection, call the find() method without a criteria
-document. For example, the following operation queries for all documents in
-the restaurants collection.
+//To return all documents in a collection, call the find() method without a criteria
+//document. For example, the following operation queries for all documents in
+//the restaurants collection.
+
 db.restaurants.find()
-The result set contains all documents in the restaurants collection.
 
-Specify Equality Conditions
+//The result set contains all documents in the restaurants collection.
 
-The query condition for an equality match on a field has the following form:
+//Specify Equality Conditions
+
+//The query condition for an equality match on a field has the following form:
+
 { <field1>: <value1>, <field2>: <value2>, ... }
-If the <field> is a top-level field and not a field in an embedded document or an array,
-you can either enclose the field name in quotes or omit the quotes.
-If the <field> is in an embedded document or an array, use dot notation to access the
-field. With dot notation, you must enclose the dotted name in quotes.
-Query by a Top Level Field
-The following operation finds documents whose borough field equals "Manhattan".
+
+//If the <field> is a top-level field and not a field in an embedded document or an array,
+//you can either enclose the field name in quotes or omit the quotes.
+//If the <field> is in an embedded document or an array, use dot notation to access the
+//field. With dot notation, you must enclose the dotted name in quotes.
+//Query by a Top Level Field
+//The following operation finds documents whose borough field equals "Manhattan".
 
 db.restaurants.find( { "borough": "Manhattan" } )
 
- The result set includes only the matching documents.
-Query by a Field in an Embedded Document
-To specify a condition on a field within an embedded document, use the dot notation.
-Dot notation requiresquotes around the whole dotted field name. The following
-operation specifies an equality condition on thezipcode field in the address embedded
-document.
+//The result set includes only the matching documents.
+//Query by a Field in an Embedded Document
+//To specify a condition on a field within an embedded document, use the dot notation.
+//Dot notation requiresquotes around the whole dotted field name. The following
+//operation specifies an equality condition on thezipcode field in the address embedded
+//document.
 
 db.restaurants.find( { "address.zipcode": "10075" } )
  
-The result set includes only the matching documents.
-For more information on querying on fields within an embedded document,
-see Embedded Documents.
+//The result set includes only the matching documents.
+//For more information on querying on fields within an embedded document,
+//see Embedded Documents.
 
 Query by a Field in an Array
 The grades array contains embedded documents as its elements. To specify a
