@@ -199,7 +199,8 @@ db.restaurants.find(
 // The result set includes only the documents that match either conditions.
 //Sort Query Results
 //To specify an order for the result set, append the sort() method to the query. Pass
-//to sort() method a document which contains the field(s) to sort by and the
+
+ //to sort() method a document which contains the field(s) to sort by and the
 //corresponding sort type, e.g. 1 for ascending and -1for descending.
 
 //For example, the following operation returns all documents in
@@ -215,7 +216,8 @@ db.restaurants.find().sort( { "borough": 1, "address.zipcode": 1 }
 //Overview
  
 //You can use the update() method to update documents of a collection. The method
-//accepts as its parameters:
+
+ //accepts as its parameters:
 //• a filter document to match the documents to update,
 //• an update document to specify the modification to perform, and
 //• an options parameter (optional).
@@ -239,7 +241,8 @@ db.restaurants.find().sort( { "borough": 1, "address.zipcode": 1 }
 //To change a field value, MongoDB provides update operators, such as $set to modify
 //values. Some update operators, such as $set, will create the field if the field does not
 //exist. See the individual update operatorsreference.
-//Update Top-Level Fields
+
+ //Update Top-Level Fields
 //The following operation updates the first document with name equal to "Juni", using
 //the $set operator to update the cuisine field and the $currentDate operator to update
 //the lastModified field with the current date.
