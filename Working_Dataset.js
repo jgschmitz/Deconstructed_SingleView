@@ -112,17 +112,17 @@ WriteResult({ "nInserted" : 1 })
 //You can specify the filter or criteria in a document and pass
 //as a parameter to the find() method.
 
-The find() method returns query results in a cursor, which is an iterable object that
-yields documents.
+//The find() method returns query results in a cursor, which is an iterable object that
+//yields documents.
 
-Prerequisites
-The examples in this section use the restaurants collection in the test database. For
-instructions on populating the collection with the sample dataset, see Import Example
-Dataset.
+//Prerequisites
+//The examples in this section use the restaurants collection in the test database. For
 
-In the mongo shell connected to a running mongod instance, switch to the test database.
+
+//In the mongo shell connected to a running mongod instance, switch to the test database.
 use test
-Query for All Documents in a Collection
+
+//Query for All Documents in a Collection
 
 To return all documents in a collection, call the find() method without a criteria
 document. For example, the following operation queries for all documents in
@@ -198,10 +198,12 @@ the conditions with a comma in the conditions document.
 
 db.restaurants.find( { "cuisine": "Italian", "address.zipcode": "10075" }
 )
-The result set includes only the documents that matched all specified criteria.
-Logical OR
-You can specify a logical disjunction (OR) for a list of query conditions by using
-the $or query operator.
+
+//The result set includes only the documents that matched all specified criteria.
+//Logical OR
+//You can specify a logical disjunction (OR) for a list of query conditions by using
+//the $or query operator.
+ 
 db.restaurants.find(
  { $or: [ { "cuisine": "Italian" }, { "address.zipcode": "10075" } ] }
 )
@@ -256,13 +258,14 @@ use test
  $currentDate: { "lastModified": true }
  }
 )
-The update operation returns a WriteResult object which contains the status of the
-operation.
 
-Update an Embedded Field
-To update a field within an embedded document, use the dot notation. When using the
-dot notation, enclose the whole dotted field name in quotes. The following updates
-the street field in the embedded addressdocument.
+//The update operation returns a WriteResult object which contains the status of the
+//operation.
+
+//Update an Embedded Field
+//To update a field within an embedded document, use the dot notation. When using the
+//dot notation, enclose the whole dotted field name in quotes. The following updates
+//the street field in the embedded addressdocument.
 
 db.restaurants.update(
  { "restaurant_id" : "41156888" },
@@ -305,7 +308,6 @@ db.restaurants.update(
 //After the following update, the modified document will only contain
 //the _id field, name field, the addressfield. i.e. the document will not contain
 //the restaurant_id, cuisine, grades, and the borough fields.
-
 
 db.restaurants.update(
  { "restaurant_id" : "41704620" },
