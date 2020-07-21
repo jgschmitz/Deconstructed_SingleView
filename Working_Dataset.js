@@ -26,25 +26,7 @@
 //Retrieve the dataset from https://raw.githubusercontent.com/OpenKitten/Mongo-Assets/master/primer-dataset.json
 //and save to a file named primer-dataset.json.
 
-//Import data into the collection.
-
-//In the system shell or command prompt, use mongoimport to insert the documents
-//into therestaurants collection in the test database. If the collection already exists
-//in the test database, the operation will drop the restaurants collection first.
-
-//The mongoimport connects to a mongod instance running on localhost on port
-//number 27017.
-
-//To import data into a mongod instance running on a different host or port, specify the
-//hostname or port by including the --host and the --port options in
-//your mongoimport command.
-
-//MongoDB Shell (mongo)
-//The mongo shell is an interactive JavaScript interface to MongoDB and is a component
-//of the MongoDB package. You can use the mongo shell to query and update data as
-//well as perform administrative operations.
-
-//Start mongo
+//Start mongo - mongo shell should already be setup in your terminal 
 //Once you have installed and have started MongoDB, connect the mongo shell to your
 //running MongoDB instance. Ensure that MongoDB is running before attempting to
 //launch the mongo shell.
