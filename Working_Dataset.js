@@ -160,45 +160,47 @@ db.restaurants.find( { "address.zipcode": "10075" } )
 //For more information on querying on fields within an embedded document,
 //see Embedded Documents.
 
-Query by a Field in an Array
-The grades array contains embedded documents as its elements. To specify a
-condition on a field in these documents, use the dot notation. Dot
-notation requires quotes around the whole dotted field name. The following queries for 
+//Query by a Field in an Array
+//The grades array contains embedded documents as its elements. To specify a
+//condition on a field in these documents, use the dot notation. Dot
+//notation requires quotes around the whole dotted field name. The following queries for 
 
-documents whose grades array contains an embedded document with a
-field gradeequal to "B".
+//documents whose grades array contains an embedded document with a
+//field gradeequal to "B".
 
 db.restaurants.find( { "grades.grade": "B" } )
  
-The result set includes only the matching documents.
-For more information on querying on arrays, such as specifying multiple conditions on
-array elements, seeArrays and $elemMatch.
-Specify Conditions with Operators
-MongoDB provides operators to specify query conditions, such as comparison
-operators. Although there are some exceptions, such as the $or and $and conditional
-operators, query conditions using operators generally have the following form:
+//The result set includes only the matching documents.
+//For more information on querying on arrays, such as specifying multiple conditions on
+//array elements, seeArrays and $elemMatch.
+//Specify Conditions with Operators
+//MongoDB provides operators to specify query conditions, such as comparison
+//operators. Although there are some exceptions, such as the $or and $and conditional
+//operators, query conditions using operators generally have the following form:
 { <field1>: { <operator1>: <value1> } }
-For a complete list of the operators, see query operators.
-Greater Than Operator ($gt)
-Query for documents whose grades array contains an embedded document with a
-field score greater than 30.
+
+//For a complete list of the operators, see query operators.
+//Greater Than Operator ($gt)
+//Query for documents whose grades array contains an embedded document with a
+//field score greater than 30.
  
 db.restaurants.find( { "grades.score": { $gt: 30 } } )
  
-The result set includes only the matching documents.
-Less Than Operator ($lt)
-Query for documents whose grades array contains an embedded document with a
-field score less than10.
+//The result set includes only the matching documents.
+//Less Than Operator ($lt)
+//Query for documents whose grades array contains an embedded document with a
+//field score less than10.
 
 db.restaurants.find( { "grades.score": { $lt: 10 } } )
-The result set includes only the matching documents.
 
-Combine Conditions
-You can combine multiple query conditions in logical conjunction (AND) and logical
-disjunctions (OR).
-Logical AND
-You can specify a logical conjunction (AND) for a list of query conditions by separating
-the conditions with a comma in the conditions document.
+//The result set includes only the matching documents.
+
+//Combine Conditions
+//You can combine multiple query conditions in logical conjunction (AND) and logical
+//disjunctions (OR).
+//Logical AND
+//You can specify a logical conjunction (AND) for a list of query conditions by separating
+//the conditions with a comma in the conditions document.
 
 db.restaurants.find( { "cuisine": "Italian", "address.zipcode": "10075" }
 )
@@ -229,22 +231,27 @@ db.restaurants.find().sort( { "borough": 1, "address.zipcode": 1 }
 //Update Data with the mongo Shell
 
 //Overview
-You can use the update() method to update documents of a collection. The method
-accepts as its parameters:
-• a filter document to match the documents to update,
-• an update document to specify the modification to perform, and
-• an options parameter (optional).
-To specify the filter, use the same structure and syntax as the query conditions.
-See Find or Query Data with the mongo Shell for an introduction to query conditions.
-By default, the update() method updates a single document. Use the multi option to
-update all documents that match the criteria.
-You cannot update the _id field.
-Prerequisites
-The examples in this section use the restaurants collection in the test database. For
-instructions on populating the collection with the sample dataset, see Import Example
-Dataset.
-In the mongo shell connected to a running mongod instance, switch to the test database.
-use test
+ 
+//You can use the update() method to update documents of a collection. The method
+//accepts as its parameters:
+//• a filter document to match the documents to update,
+//• an update document to specify the modification to perform, and
+//• an options parameter (optional).
+
+//To specify the filter, use the same structure and syntax as the query conditions.
+//See Find or Query Data with the mongo Shell for an introduction to query conditions.
+
+//By default, the update() method updates a single document. Use the multi option to
+//update all documents that match the criteria.
+//You cannot update the _id field.
+
+//Prerequisites
+//The examples in this section use the restaurants collection in the test database. For
+//instructions on populating the collection with the sample dataset, see Import Example
+//Dataset.
+
+//In the mongo shell connected to a running mongod instance, switch to the test database.
+//use test
  
 //Update Specific Fields
 //To change a field value, MongoDB provides update operators, such as $set to modify
