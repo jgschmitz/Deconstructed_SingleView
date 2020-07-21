@@ -60,9 +60,9 @@
 
 use test
 
-Insert a Document
-Insert a document into a collection named restaurants. The operation will create the
-collection if the collection does not currently exist.
+//Insert a Document
+//Insert a document into a collection named restaurants. The operation will create the
+//collection if the collection does not currently exist.
 
 db.restaurants.insert(
  {
@@ -93,21 +93,24 @@ db.restaurants.insert(
 )
 
 //The method returns a WriteResult object with the status of the operation.
+
 WriteResult({ "nInserted" : 1 })
 
 //If the document passed to the insert() method does not contain the _id field,
 //the mongo shell automatically adds the field to the document and sets the field’s value
 //to a generated ObjectId.
 
-Find or Query Data with the mongo Shell
-Overview
-You can use the find() method to issue a query to retrieve data from a collection in
-MongoDB. All queries in MongoDB have the scope of a single collection.
-Queries can return all documents in a collection or only the documents that match a
-specified filter or criteria.
+//Find or Query Data with the mongo Shell
 
-You can specify the filter or criteria in a document and pass
-as a parameter to the find() method.
+//Overview
+
+//You can use the find() method to issue a query to retrieve data from a collection in
+//MongoDB. All queries in MongoDB have the scope of a single collection.
+//Queries can return all documents in a collection or only the documents that match a
+//specified filter or criteria.
+
+//You can specify the filter or criteria in a document and pass
+//as a parameter to the find() method.
 
 The find() method returns query results in a cursor, which is an iterable object that
 yields documents.
@@ -265,15 +268,17 @@ db.restaurants.update(
  { "restaurant_id" : "41156888" },
  { $set: { "address.street": "East 31st Street" } }
 )
-The update operation returns a WriteResult object which contains the status of the
-operation.
 
-Update Multiple Documents
-By default, the update() method updates a single document. To update multiple
-documents, use themulti option in the update() method. The following operation
-updates all documents that haveaddress.zipcode field equal
-to "10016" and cuisine field equal to "Other", setting the cuisinefield
-to "Category To Be Determined" and the lastModified field to the current date.
+//The update operation returns a WriteResult object which contains the status of the
+//operation.
+
+//Update Multiple Documents
+
+//By default, the update() method updates a single document. To update multiple
+//documents, use themulti option in the update() method. The following operation
+//updates all documents that haveaddress.zipcode field equal
+//to "10016" and cuisine field equal to "Other", setting the cuisinefield
+//to "Category To Be Determined" and the lastModified field to the current date.
  
 db.restaurants.update(
  { "address.zipcode": "10016", cuisine: "Other" },
@@ -294,7 +299,7 @@ db.restaurants.update(
 //document, you can omit the _id field since the _id field is immutable. If you do include
 //the _id field, it must be the same value as the existing value.
 
-IMPORTANT
+//IMPORTANT
 //After the update, the document only contains the field or fields in the replacement
 //document.
 //After the following update, the modified document will only contain
