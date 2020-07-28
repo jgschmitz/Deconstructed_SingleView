@@ -1,4 +1,4 @@
-# Deconstructed_SingleView
+# Deconstructed SingleView MongoDB E-Workshop
 <br>
 This class will walk the customers through these steps
 <br>
