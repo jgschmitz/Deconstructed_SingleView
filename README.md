@@ -1,6 +1,9 @@
 # Deconstructed SingleView MongoDB E-Workshop
 <br>
-This class will walk the customers through these steps
+This class will walk the customers through these steps<br>
+All that will be needed to complete this course is a web browser<br>
+everything will execute from the mongodb shell.<br>
+We will be using MongoDB 4.4 for this workshop.
 <br>
 ***Initial beginning steps with MongoDB<br>
 -Crud operations Create, Insert, Update, Delete<br>
