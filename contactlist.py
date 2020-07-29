@@ -4,7 +4,7 @@ from random import randint      # For student id
 fake = Faker() 
 def input_data(x): 
   print 1,2,3,4,5,,7,8,9,10
-    # dictionary 
+  # dictionary 
     student_data ={} 
     for i in range(0, x): 
         student_data[i]={} 
