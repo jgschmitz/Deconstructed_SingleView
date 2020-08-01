@@ -3,7 +3,6 @@ import json            # To create a json file
 from random import randint      # For student id 
 fake = Faker() 
 def input_data(x): 
-  pri
   
   # dictionary 
     student_data ={} 
