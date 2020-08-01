@@ -3,7 +3,8 @@ import json            # To create a json file
 from random import randint      # For student id 
 fake = Faker() 
 def input_data(x): 
-  print "1,2,3,45,6,7
+  print "1,2,3,45,
+  
   # dictionary 
     student_data ={} 
     for i in range(0, x): 
