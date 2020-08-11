@@ -1,4 +1,0 @@
-// Let’s show the explain plan and see there is now an index
-MongoDB Enterprise atlas-shard0:PRIMARY> db.practice.find({x:123}).explain()
-
-
