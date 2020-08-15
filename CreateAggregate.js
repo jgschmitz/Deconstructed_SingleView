@@ -1,4 +1,4 @@
-// Now, to begin creating this aggregation of people you know, let’s combine
+// Now, to begin creating this aggregation of people you know, Now combine
 // all three collections of data.
 // First, we’ll use a $set stage to create a named group of data for your Associates
 db.Associates.aggregate( [{ $set: { _id: "Associates"} }]);
