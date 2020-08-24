@@ -65,8 +65,7 @@ Now lets add sorting Sort by last_name, then first_name.
 Ok great! lets go ahead and sort by gender.
 
 **Step 16**<br>
-We are getting near the finish line! To create a materialized view, add a ‘merge’ operation at the end of the
-aggregation pipeline to Insert/Update GenderCount_MaterializedView with aggregation by gender group.
+We are getting near the finish line! To create a materialized view, add a ‘merge’ operation at the end of the aggregation pipeline to Insert/Update GenderCount_MaterializedView with aggregation by gender group.
 
 
 
