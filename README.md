@@ -1,4 +1,4 @@
-Deconstructed SingleView MongoDB E-Workshop
+**Deconstructed SingleView MongoDB E-Workshop
 
 All that will be needed to complete this course is a web browser.
 Everything will execute from the mongodb shell.
