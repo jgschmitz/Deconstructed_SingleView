@@ -67,6 +67,27 @@ Ok great! lets go ahead and sort by gender.
 **Step 16**<br>
 We are getting near the finish line! To create a materialized view, add a ‘merge’ operation at the end of the aggregation pipeline to Insert/Update GenderCount_MaterializedView with aggregation by gender group.
 
+**Select a dashboard for your chart**
+From the Dashboards page, select the dashboard where you wish to add a new chart. For instructions on setting up a dashboard, see Dashboards.
+
+Click the New Chart button at the top-right corner of the dashboard view.
+
+**Choose your chart’s data source**
+In the Data Source dropdown, select the data source to be used for this chart. For information on adding data sources in MongoDB Charts, see Data Sources.
+
+**Choose your chart type**
+In the Chart Type dropdown, select the type for this chart.
+
+Each chart type provides different visualization options for the fields in your data, reflected by various encoding channels. These channels dictate how your data is visualized and enable powerful aggregations for your data. For details on the different encoding channel types, refer to the Encoding Channels page.
+
+**Add fields to your chart**
+Drag fields from the Fields section to the desired encoding channels below the Chart Type dropdown. The fields listed correspond to the fields in your data source. You can search for a specific field in your data source by using the Filter search bar at the top of the Fields section.
+
+**Title your chart**
+Give your chart a title by hovering over the Enter a title for your chart text clicking the Pencil Icon. Click the check mark to save your title.
+
+**Save your chart**
+Once you are satisfied with your chart, click Save Changes. This saves your chart to your dashboard and redirects you to the dashboard view.
 
 
 
