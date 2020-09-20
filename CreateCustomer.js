@@ -1,6 +1,5 @@
 db.Customers.insertMany(
-[{"id":1,"first_name":"Iorgo","last_name":"Olenin","email":"iolenin0@github.com","gender":"Male","ip_address":"197.164.91.169"},
-{"id":2,"first_name":"Jacinthe","last_name":"Worshall","email":"jworshall1@usatoday.com","gender":"Female","ip_address":"37.239.219.131"},
+[{"id":2,"first_name":"Jacinthe","last_name":"Worshall","email":"jworshall1@usatoday.com","gender":"Female","ip_address":"37.239.219.131"},
 {"id":3,"first_name":"Michele","last_name":"Matthis","email":"mmatthis2@bravesites.com","gender":"Female","ip_address":"223.128.142.117"},
 {"id":4,"first_name":"Byrann","last_name":"Molloy","email":"bmolloy3@unc.edu","gender":"Male","ip_address":"208.132.94.24"},
 {"id":5,"first_name":"Sallie","last_name":"Brabin","email":"sbrabin4@github.com","gender":"Female","ip_address":"56.30.118.144"},
