@@ -89,7 +89,7 @@ Give your chart a title by hovering over the Enter a title for your chart text c
 **Save your chart**
 Once you are satisfied with your chart, click Save Changes. This saves your chart to your dashboard and redirects you to the dashboard view.
 
-**Enjoy MongoDB!**
+**Enjoy MongoDB and happy hacking!**
 
 
 
