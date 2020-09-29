@@ -19,7 +19,7 @@ This class will walk the customers through these steps<br>
 *Then visualizing this data in mongodb charts for the finale*
 
 **Step 1**<br>
-Let's get started! Our first step is to create eworkshop database and then insert a record into a collection called singleview
+Alright here we go! Our first step is to create eworkshop database and then insert a record into a collection called singleview
 
 **Step 2**<br>
 Now lets do a find on the read on the document and see what we inserted to the collection
